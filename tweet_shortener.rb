@@ -25,4 +25,15 @@ def word_substituter(tweets)
   end.join(" ")
 end
 
-word_substituter("Hey guys, can anyone teach me how to be cool? I really want to be the best at everything, you know what I mean? Tweeting is super fun you guys!!!!")
+def word_replace(tweet)
+
+    tweet.split(" ").map do |word|
+      if dictionary.keys.include?(word.downcase)
+        word = dictionary[word.downcase]
+      else
+        word
+    end
+  end.join(" ")
+end
+
+word_replace("Hey guys, can anyone teach me how to be cool? I really want to be the best at everything, you know what I mean? Tweeting is super fun you guys!!!!")
