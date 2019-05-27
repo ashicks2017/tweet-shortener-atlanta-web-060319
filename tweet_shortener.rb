@@ -17,8 +17,8 @@ end
 def word_substituter(tweets)
   
  tweets.split(",") do |word|
-   if dictionary.keys.include?(word.downgrade)
-     word = dictionary[word.downgrade]
+   if dictionary.keys.include?(word.downcase)
+     word = dictionary[word.downcase]
   else
     word
     end
