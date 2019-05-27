@@ -18,13 +18,13 @@ def word_substituter(tweets)
   
  tweets.split(" ").map do |word|
    if dictionary.keys.include?(word.downcase)
-   puts  word = dictionary[word.downcase]
+     word = dictionary[word.downcase]
   else
-   puts word
+     word
     end
   end.join(" ")
 end
 
+def bulk_tweet_shortener
 
 
-word_substituter("Hey guys, can anyone teach me how to be cool? I really want to be the best at everything, you know what I mean? Tweeting is super fun you guys!!!!")
