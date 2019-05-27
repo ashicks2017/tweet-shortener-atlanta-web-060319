@@ -29,9 +29,9 @@ def word_replace(tweet)
 
     tweet.split(" ").map do |word|
       if dictionary.keys.include?(word.downcase)
-        word = dictionary[word.downcase]
+        puts word = dictionary[word.downcase]
       else
-        word
+       puts word
     end
   end.join(" ")
 end
