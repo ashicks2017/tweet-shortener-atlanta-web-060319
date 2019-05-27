@@ -27,8 +27,7 @@ end
 
 def bulk_tweet_shortener(tweets)
   tweets.map do |words|
-    
-  
+    prints word_substituter(words)
 end
 
 
