@@ -31,5 +31,6 @@ def bulk_tweet_shortener(tweets)
  end
 end
 
-def selective_tweet_shortner
-
+def selective_tweet_shortner(tweets)
+  if tweets <
+end
