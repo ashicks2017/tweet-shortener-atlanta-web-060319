@@ -33,4 +33,7 @@ end
 
 def selective_tweet_shortner(tweets)
   if tweet.char.length
+    word_substituter(tweets)
+  else
+    tweets
 end
